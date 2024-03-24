@@ -1,0 +1,12 @@
+<mat-spinner class="loader" *ngIf="loading; else content"></mat-spinner>
+<ng-template #content>
+  <app-news-comments [item]="news"></app-news-comments>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <textarea class="textarea" matInput></textarea>
+    </mat-form-field>
+
+    <button class="button" mat-stroked-button>add comment</button>
+  </form>
+  <app-comments-tree *ngFor="let comment of news?.children" [comment]="comment"></app-comments-tree>
+</ng-template>

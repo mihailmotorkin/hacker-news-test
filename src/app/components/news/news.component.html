@@ -1,0 +1,20 @@
+<section>
+  <div class="news">
+    <div class="top">
+      <span class="index">{{page * hitsPerPage + i + 1}}.</span>
+      <a class="triangle_up" href="#"></a>
+      <h4 class="title"><a [routerLink]="['/comments', hit.story_id]">{{hit.title}}</a></h4>
+      <span>
+        <a href="{{hit.url}}" target="_blank">({{hit.url | domain}})</a>
+      </span>
+    </div>
+    <div class="bottom">
+      <span>{{hit.points}} points</span>
+      <span>by {{hit.author}}</span>
+      <span>| hide |</span>
+      <span>
+        <a [routerLink]="['/comments', hit.story_id]">{{hit.children?.length}} comments</a>
+      </span>
+    </div>
+  </div>
+</section>

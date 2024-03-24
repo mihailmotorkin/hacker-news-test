@@ -1,0 +1,17 @@
+<section>
+  <div class="news">
+    <div class="top">
+      <span class="triangle_up"></span>
+      <h4 class="title">{{item?.title}}</h4>
+      <span>
+        <a href="{{item!.url}}" target="_blank">({{item!.url | domain}})</a>
+      </span>
+    </div>
+    <div class="bottom">
+      <span>{{item?.points}} points</span>
+      <span>by {{item?.author}}</span>
+      <span>| hide |</span>
+      <span>{{item?.children?.length}} comments</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<div class="comment-tree">
+  <div class="navigation">
+    <span class="triangle_up"></span>
+    <span class="author">{{comment.author}}</span>
+    <span class="date">{{comment.created_at | date}}</span>
+  </div>
+  <div [innerHTML]="comment.text"></div>
+  <div *ngIf="comment.children?.length">
+    <app-comments-tree *ngFor="let comment of comment.children" [comment]="comment"></app-comments-tree>
+  </div>
+</div>

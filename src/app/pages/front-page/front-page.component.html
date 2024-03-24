@@ -1,0 +1,14 @@
+<mat-spinner class="loader" *ngIf="loading; else content"></mat-spinner>
+<ng-template #content>
+  <app-news *ngFor="let hit of hits; index as i;" [hit]="hit" [i]="i" [page]="page" [hitsPerPage]="hitsPerPage">
+  </app-news>
+  <section>
+    <div class="pagination">
+      <div class="buttons">
+        <button class="btn" (click)="goToPrevPage(page)"><span> prev page </span></button>
+        <span>{{page + 1}}</span>
+        <button class="btn" (click)="goToNextPage(page)"><span> next page </span></button>
+      </div>
+    </div>
+  </section>
+</ng-template>

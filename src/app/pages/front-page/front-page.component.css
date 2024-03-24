@@ -1,0 +1,17 @@
+.loader {
+  margin: 200px auto 0;
+}
+.pagination {
+  background-color: #f6f6ef;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.btn {
+  padding: 5px 10px;
+}
+span {
+  padding: 10px 15px;
+}
