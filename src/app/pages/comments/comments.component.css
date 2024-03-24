@@ -1,5 +1,6 @@
-section {
-  padding: 0 100px;
+.wrapper {
+  background-color: #f6f6ef;
+  margin: 0 100px;
 }
 .news {
   background-color: #f6f6ef;
@@ -12,13 +13,6 @@ section {
 h4 a {
   text-decoration: none;
   margin: 0;
-}
-.triangle_up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid gray;
 }
 a {
   margin-right: 5px;
@@ -41,16 +35,16 @@ span {
   padding-left: 32px;
 }
 .button {
-  margin-left: 100px;
+  margin-left: 20px;
   margin-bottom: 50px;
+  background-color: #fff;
 }
-.example-full-width {
-  margin-left: 100px;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.example-form {
+.textarea {
+  display: block;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  min-height: 100px;
   min-width: 150px;
   max-width: 500px;
   width: 100%;

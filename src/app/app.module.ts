@@ -2,15 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 import { AppComponent } from './app.component';
 import { FrontPageComponent } from './pages/front-page/front-page.component';
@@ -51,10 +45,7 @@ const routes = [{
     MatButtonModule,
     FormsModule, 
     MatFormFieldModule, 
-    MatInputModule,
     MatButtonModule, 
-    MatIconModule,
-    BrowserAnimationsModule,
     MatProgressSpinnerModule,
 
   ],

@@ -1,9 +1,6 @@
-section {
-  padding: 0 100px;
-}
 .news {
   background-color: #f6f6ef;
-  padding: 10px;
+  padding: 10px 15px 20px 15px;
 }
 .title {
   margin-right: 5px;
